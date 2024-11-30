@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+h1, h2, h3 {
+  margin: 0 0 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Browse Topics Section */
+.browse-topics {
+  padding: 20px 0;
+  background: #f9f9f9;
+}
+
+.browse-topics h1 {
+  text-align: center;
+  color: #333;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tabs li {
+  padding: 10px 15px;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.tabs li.active {
+  background: #007bff;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* How Does It Work Section */
+.how-it-works {
+  padding: 40px 0;
+  background: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.step {
+  background: white;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.step .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .cards, .steps {
+    flex-direction: column;
+  }
+
+  .card, .step {
+    width: 100%;
+  }
+}
